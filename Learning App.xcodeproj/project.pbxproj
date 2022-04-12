@@ -12,6 +12,9 @@
 		EC32B02C280565560015483F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC32B02B280565560015483F /* Assets.xcassets */; };
 		EC32B02F280565560015483F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC32B02E280565560015483F /* Preview Assets.xcassets */; };
 		EC32B03B280566290015483F /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32B03A280566290015483F /* ContentModel.swift */; };
+		EC32B03E28056B0C0015483F /* style.html in Resources */ = {isa = PBXBuildFile; fileRef = EC32B03C28056B0C0015483F /* style.html */; };
+		EC32B03F28056B0C0015483F /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = EC32B03D28056B0C0015483F /* data.json */; };
+		EC32B04128056CED0015483F /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32B04028056CED0015483F /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		EC32B02B280565560015483F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC32B02E280565560015483F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EC32B03A280566290015483F /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		EC32B03C28056B0C0015483F /* style.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = style.html; sourceTree = "<group>"; };
+		EC32B03D28056B0C0015483F /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		EC32B04028056CED0015483F /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,7 @@
 		EC32B037280565D80015483F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EC32B04028056CED0015483F /* Models.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -99,6 +106,8 @@
 		EC32B038280565F10015483F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EC32B03D28056B0C0015483F /* data.json */,
+				EC32B03C28056B0C0015483F /* style.html */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -168,8 +177,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC32B03E28056B0C0015483F /* style.html in Resources */,
 				EC32B02F280565560015483F /* Preview Assets.xcassets in Resources */,
 				EC32B02C280565560015483F /* Assets.xcassets in Resources */,
+				EC32B03F28056B0C0015483F /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +194,7 @@
 				EC32B02A280565540015483F /* HomeView.swift in Sources */,
 				EC32B028280565540015483F /* LearningApp.swift in Sources */,
 				EC32B03B280566290015483F /* ContentModel.swift in Sources */,
+				EC32B04128056CED0015483F /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
