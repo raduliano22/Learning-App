@@ -37,7 +37,7 @@ class ContentModel: ObservableObject {
         }
         catch {
             //TODO log error
-            print("Couldn't parse local data")
+            print("Couldn't parse json local data")
         }
         
         

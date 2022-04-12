@@ -13,8 +13,8 @@
 		EC32B02F280565560015483F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC32B02E280565560015483F /* Preview Assets.xcassets */; };
 		EC32B03B280566290015483F /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32B03A280566290015483F /* ContentModel.swift */; };
 		EC32B03E28056B0C0015483F /* style.html in Resources */ = {isa = PBXBuildFile; fileRef = EC32B03C28056B0C0015483F /* style.html */; };
-		EC32B03F28056B0C0015483F /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = EC32B03D28056B0C0015483F /* data.json */; };
 		EC32B04128056CED0015483F /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32B04028056CED0015483F /* Models.swift */; };
+		EC5A36E92805954A000854E9 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = EC5A36E82805954A000854E9 /* data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +25,8 @@
 		EC32B02E280565560015483F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EC32B03A280566290015483F /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		EC32B03C28056B0C0015483F /* style.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = style.html; sourceTree = "<group>"; };
-		EC32B03D28056B0C0015483F /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		EC32B04028056CED0015483F /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		EC5A36E82805954A000854E9 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +106,7 @@
 		EC32B038280565F10015483F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				EC32B03D28056B0C0015483F /* data.json */,
+				EC5A36E82805954A000854E9 /* data.json */,
 				EC32B03C28056B0C0015483F /* style.html */,
 			);
 			path = Resources;
@@ -180,7 +180,7 @@
 				EC32B03E28056B0C0015483F /* style.html in Resources */,
 				EC32B02F280565560015483F /* Preview Assets.xcassets in Resources */,
 				EC32B02C280565560015483F /* Assets.xcassets in Resources */,
-				EC32B03F28056B0C0015483F /* data.json in Resources */,
+				EC5A36E92805954A000854E9 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
