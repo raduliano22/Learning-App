@@ -15,6 +15,7 @@
 		EC32B03E28056B0C0015483F /* style.html in Resources */ = {isa = PBXBuildFile; fileRef = EC32B03C28056B0C0015483F /* style.html */; };
 		EC32B04128056CED0015483F /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32B04028056CED0015483F /* Models.swift */; };
 		EC5A36E92805954A000854E9 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = EC5A36E82805954A000854E9 /* data.json */; };
+		EC5A36EB2805BB05000854E9 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5A36EA2805BB05000854E9 /* HomeViewRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		EC32B03C28056B0C0015483F /* style.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = style.html; sourceTree = "<group>"; };
 		EC32B04028056CED0015483F /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		EC5A36E82805954A000854E9 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		EC5A36EA2805BB05000854E9 /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				EC32B029280565540015483F /* HomeView.swift */,
+				EC5A36EA2805BB05000854E9 /* HomeViewRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC32B02A280565540015483F /* HomeView.swift in Sources */,
+				EC5A36EB2805BB05000854E9 /* HomeViewRow.swift in Sources */,
 				EC32B028280565540015483F /* LearningApp.swift in Sources */,
 				EC32B03B280566290015483F /* ContentModel.swift in Sources */,
 				EC32B04128056CED0015483F /* Models.swift in Sources */,
