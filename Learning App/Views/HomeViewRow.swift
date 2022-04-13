@@ -64,7 +64,7 @@ struct HomeViewRow: View {
                             .resizable()
                             .frame(width: 15, height: 15)
                         Text(time)
-                            .font(.caption)
+                            .font(Font.system(size: 10))
                     }
                     
                     
