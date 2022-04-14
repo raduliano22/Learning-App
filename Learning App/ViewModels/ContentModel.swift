@@ -10,14 +10,21 @@ import Foundation
 //create the view model class , since this will keep all our data for our views it will conform to ObservableObject protocol
 
 class ContentModel: ObservableObject {
-    
+    //list of modules
     @Published var modules = [Module]()
+    
+    //current module
+    @Published var currentModule: Module?
+    var currentModuleIndex = 0
+    
     var styleData : Data?
     
     //this init method is getting called when we createe a new contentModel instance -> see main
     init() {
         getLocalData()
     }
+    
+    // MARK: - Data Methods
     
     func getLocalData() {
         
@@ -60,6 +67,23 @@ class ContentModel: ObservableObject {
         
         
         
+    }
+    
+    // MARK: - Module Navigation methods
+    
+    func beginModule(_ moduleid: Int) {
+        
+        //find the index for this module id
+        for index in 0..<modules.count {
+            if modules[index].id == moduleid {
+                //found the matching module
+                currentModuleIndex = index
+                break
+            }
+        }
+        
+        //set the current module
+        currentModule = modules[currentModuleIndex]
     }
     
 }
