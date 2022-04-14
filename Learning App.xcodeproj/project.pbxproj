@@ -19,6 +19,7 @@
 		EC4572782808134300F1DED0 /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4572772808134300F1DED0 /* ContentDetailView.swift */; };
 		EC45727B2808160400F1DED0 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC45727A2808160400F1DED0 /* AVKit.framework */; };
 		EC45727D2808171F00F1DED0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC45727C2808171F00F1DED0 /* Constants.swift */; };
+		EC4572DC28084C0D00F1DED0 /* CodeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4572DB28084C0D00F1DED0 /* CodeTextView.swift */; };
 		EC5A36E92805954A000854E9 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = EC5A36E82805954A000854E9 /* data.json */; };
 		EC5A36EB2805BB05000854E9 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5A36EA2805BB05000854E9 /* HomeViewRow.swift */; };
 /* End PBXBuildFile section */
@@ -37,6 +38,7 @@
 		EC4572772808134300F1DED0 /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
 		EC45727A2808160400F1DED0 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		EC45727C2808171F00F1DED0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EC4572DB28084C0D00F1DED0 /* CodeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextView.swift; sourceTree = "<group>"; };
 		EC5A36E82805954A000854E9 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		EC5A36EA2805BB05000854E9 /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +103,7 @@
 				EC3FED3B2806F05700ADD533 /* ContentView.swift */,
 				EC4572752808107600F1DED0 /* ContentViewRow.swift */,
 				EC4572772808134300F1DED0 /* ContentDetailView.swift */,
+				EC4572DB28084C0D00F1DED0 /* CodeTextView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				EC4572782808134300F1DED0 /* ContentDetailView.swift in Sources */,
 				EC32B028280565540015483F /* LearningApp.swift in Sources */,
 				EC4572762808107600F1DED0 /* ContentViewRow.swift in Sources */,
+				EC4572DC28084C0D00F1DED0 /* CodeTextView.swift in Sources */,
 				EC32B03B280566290015483F /* ContentModel.swift in Sources */,
 				EC32B04128056CED0015483F /* Models.swift in Sources */,
 				EC45727D2808171F00F1DED0 /* Constants.swift in Sources */,

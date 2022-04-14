@@ -21,6 +21,9 @@ class ContentModel: ObservableObject {
     @Published var currentLesson: Lesson?
     var currentLessonIndex = 0
     
+    //current lesson explanation
+    @Published var lessonDescription = NSAttributedString() // set it as an empty NSAtribstring 
+    
     var styleData : Data?
     
     //this init method is getting called when we createe a new contentModel instance -> see main
@@ -102,6 +105,7 @@ class ContentModel: ObservableObject {
         
         //set the current lesson
         currentLesson = currentModule!.content.lessons[currentLessonIndex]
+        lessonDescription = addStyling(currentLesson!.explanation)
     }
     
     func nextLesson() {
@@ -112,6 +116,7 @@ class ContentModel: ObservableObject {
         if currentLessonIndex < currentModule!.content.lessons.count {
             //set the current lesson property
             currentLesson = currentModule!.content.lessons[currentLessonIndex]
+            lessonDescription = addStyling(currentLesson!.explanation)
         }
         else {
             //reset the lesson state
@@ -134,4 +139,28 @@ class ContentModel: ObservableObject {
         
     }
     
+    // MARK: - Code Styling
+    private func addStyling(_ htmlString: String) -> NSAttributedString {
+        var resultString = NSAttributedString()
+        var data = Data()
+        
+        //add the styling data
+        if styleData != nil {
+            data.append(self.styleData!)
+        }
+    
+        //add the html data
+        data.append(Data(htmlString.utf8))
+        
+        //convert to atributed string
+        do {
+            let atributedString = try NSAttributedString(data: data, options: [.documentType: NSAttributedString.DocumentType.html], documentAttributes: nil)
+                
+                resultString = atributedString
+        }
+        catch {
+            print("Couldn't turn html into atributed string")
+        }
+        return resultString
+    }
 }
