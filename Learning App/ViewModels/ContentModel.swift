@@ -26,6 +26,9 @@ class ContentModel: ObservableObject {
     
     var styleData : Data?
     
+    //Current selected content and test
+    @Published var currentContentSelected:Int?
+    
     //this init method is getting called when we createe a new contentModel instance -> see main
     init() {
         getLocalData()

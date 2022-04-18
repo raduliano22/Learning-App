@@ -24,16 +24,15 @@ struct HomeView: View {
                         ForEach(model.modules) { module in
                             VStack(spacing: 20) {
                                 
-                                NavigationLink {
+                                NavigationLink (tag: module.id, selection: $model.currentContentSelected, destination: {
                                     ContentView()
                                         .onAppear {
                                             model.beginModule(module.id)
                                         }
-                                } label: {
-                                    
+                                }, label: {
                                     // learning card
                                     HomeViewRow(image: module.content.image, title: "Learn \(module.category)", description: module.content.description, count:"\(module.content.lessons.count) Lessons", time: module.content.time)
-                                }
+                                })
 
                                 
                                 
